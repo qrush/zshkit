@@ -111,8 +111,6 @@ if [[ $ZSH_VERSION > 4.3.6 ]]; then
 fi
 # Needed for doc function in 03_help.
 compdef _doc doc
-# Set up completion for bundle function in 05_editor.
-compdef _bundle bundle
 
 _cheat() {
     compadd print -l ${(s. .)$(cheat sheets | tr -d ' ' | tr '\n' ' ' | sed -e 's/AllCheatSheets://')}
